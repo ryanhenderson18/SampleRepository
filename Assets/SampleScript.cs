@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SampleScript : MonoBehaviour
 {
+    public GameObject sphere;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class SampleScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Sup everyone");
+            sphere.GetComponent<Renderer>().material.color = Color.green;
         }
     }
 }
